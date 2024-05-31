@@ -12,8 +12,8 @@ function Main(props: {
 }) {
   return (
     <div>
-      <h2 className="text-3xl mb-1">{props.heading}</h2>
-      <h3 className="text-xl mb-3">{props.discription}</h3>
+      <h2 className="mb-1 text-3xl">{props.heading}</h2>
+      <h3 className="mb-3 text-xl">{props.discription}</h3>
       <InputTypeCom
         type={props.type}
         setValue={props.setValue}
