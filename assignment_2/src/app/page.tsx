@@ -24,7 +24,7 @@ function Page() {
   });
   useEffect(() => {
     ErrorDisplay(formState.watch());
-  }, [formState]);
+  }, [formState.watch()]);
 
   const ErrorDisplay = (data: z.output<Inputs>) => {
     let isError = false;
@@ -58,6 +58,7 @@ function Page() {
           <>
             <div>submitted</div>
             <button
+              className="text-xxl rounded-xl bg-blue-600 px-4 py-2 text-white"
               onClick={() => {
                 formState.reset(defaultValues);
                 setisSubmitted(false);
